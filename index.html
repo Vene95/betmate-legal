@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BetMate</title>
+  <style>
+:root {
+  --bg: #f3f6f4;
+  --card: #ffffff;
+  --text: #17201c;
+  --muted: #55625c;
+  --brand: #0e8a57;
+  --line: #d9e2dd;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111614;
+    --card: #1a211e;
+    --text: #e6ece9;
+    --muted: #a3b0aa;
+    --brand: #3fcf8e;
+    --line: #2a332f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 16px 8px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: #0e8a57;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+header b { font-size: 18px; }
+header span { display: block; color: var(--muted); font-size: 13px; }
+nav { max-width: 760px; margin: 0 auto; padding: 0 16px; display: flex; gap: 16px; flex-wrap: wrap; }
+nav a { color: var(--brand); text-decoration: none; font-weight: 600; }
+main {
+  max-width: 760px;
+  margin: 16px auto 40px;
+  padding: 24px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+@media (max-width: 800px) { main { margin: 16px; } }
+h1 { margin-top: 0; font-size: 26px; line-height: 1.25; }
+h2 { font-size: 19px; margin-top: 28px; }
+.muted { color: var(--muted); font-size: 14px; }
+.box {
+  border-left: 4px solid var(--brand);
+  background: color-mix(in srgb, var(--brand) 10%, transparent);
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+a { color: var(--brand); }
+li { margin: 4px 0; }
+footer { text-align: center; color: var(--muted); font-size: 13px; padding-bottom: 32px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">B</div>
+  <div><b>BetMate</b><span>Analize statistice de fotbal</span></div>
+</header>
+<nav>
+  <a href="index.html">Acasă</a>
+  <a href="privacy.html">Confidențialitate</a>
+  <a href="delete-account.html">Ștergerea contului</a>
+</nav>
+<main>
+  <h1>BetMate</h1>
+  <p>
+    Analize statistice pentru meciurile de fotbal: șansele fiecărui rezultat, goluri, scoruri
+    probabile, forța echipelor și un jurnal personal al pariurilor.
+  </p>
+  <ul>
+    <li><a href="privacy.html">Politica de confidențialitate</a></li>
+    <li><a href="delete-account.html">Cum îți ștergi contul</a></li>
+  </ul>
+  <p class="muted">
+    BetMate oferă doar analize statistice, nu preia pariuri și nu garantează câștiguri.
+    Jocurile de noroc sunt interzise minorilor (18+). Joacă responsabil.
+  </p>
+  <p class="muted">Contact: <a href="mailto:vvvaidevelopment@gmail.com">vvvaidevelopment@gmail.com</a></p>
+</main>
+<footer>© 2026 BetMate</footer>
+</body>
+</html>
