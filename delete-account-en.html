@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account deletion – BetMate</title>
+  <style>
+:root {
+  --bg: #f3f6f4;
+  --card: #ffffff;
+  --text: #17201c;
+  --muted: #55625c;
+  --brand: #0e8a57;
+  --line: #d9e2dd;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111614;
+    --card: #1a211e;
+    --text: #e6ece9;
+    --muted: #a3b0aa;
+    --brand: #3fcf8e;
+    --line: #2a332f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 16px 8px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: #0e8a57;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+header b { font-size: 18px; }
+header span { display: block; color: var(--muted); font-size: 13px; }
+nav { max-width: 760px; margin: 0 auto; padding: 0 16px; display: flex; gap: 16px; flex-wrap: wrap; }
+nav a { color: var(--brand); text-decoration: none; font-weight: 600; }
+main {
+  max-width: 760px;
+  margin: 16px auto 40px;
+  padding: 24px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+@media (max-width: 800px) { main { margin: 16px; } }
+h1 { margin-top: 0; font-size: 26px; line-height: 1.25; }
+h2 { font-size: 19px; margin-top: 28px; }
+.muted { color: var(--muted); font-size: 14px; }
+.box {
+  border-left: 4px solid var(--brand);
+  background: color-mix(in srgb, var(--brand) 10%, transparent);
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+a { color: var(--brand); }
+li { margin: 4px 0; }
+footer { text-align: center; color: var(--muted); font-size: 13px; padding-bottom: 32px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">B</div>
+  <div><b>BetMate</b><span>Football statistics and forecasts</span></div>
+</header>
+<nav>
+  <a href="index-en.html">Home</a>
+  <a href="privacy-en.html">Privacy</a>
+  <a href="delete-account-en.html">Account deletion</a>
+  <a href="delete-account.html">Română</a>
+</nav>
+<main>
+  <h1>Deleting your BetMate account</h1>
+  <p class="muted">Last updated: 21 October 2026</p>
+
+  <h2>In the app (immediately)</h2>
+  <ol>
+    <li>Open BetMate and sign in.</li>
+    <li>Go to <b>More → Settings → Account</b>.</li>
+    <li>Tap <b>Delete account</b> and confirm.</li>
+  </ol>
+  <p>Your account is deleted on the spot.</p>
+
+  <h2>Without the app (by email)</h2>
+  <p>
+    Send an email to
+    <a href="mailto:vvvaidevelopment@gmail.com?subject=Delete%20BetMate%20account">vvvaidevelopment@gmail.com</a>
+    with the subject <b>“Delete BetMate account”</b>, <b>from the address you signed up with</b>, so we know
+    the request comes from you. We delete the account within 30 days and confirm by email.
+  </p>
+
+  <h2>What is deleted</h2>
+  <ul>
+    <li>your account (email address and encrypted password);</li>
+    <li>your bet journal;</li>
+    <li>your settings (bankroll, ticket of the day rules).</li>
+  </ul>
+  <div class="box">
+    Deletion is permanent and cannot be undone. We keep no copies of your account, journal or settings.
+    Only the hosting provider’s technical logs (IP address and sign-in time) are kept for a few more days
+    and are then deleted automatically.
+  </div>
+
+  <p>More details in the <a href="privacy-en.html">Privacy policy</a>.</p>
+</main>
+<footer>© 2026 BetMate</footer>
+</body>
+</html>
